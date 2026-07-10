@@ -1,0 +1,10 @@
+{
+  "name": "LuneFubHub1",
+  "description": "An interactive, fully featured companion hub for LUNÉ, the fandom of \u0026TEAM. Featuring multi-theme designs, 7 games with sounds, a disc player discography, personality matchmaking, Polaroid photobooth with live camera, and more!",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  font-family: var(--font-fredoka);
+}
+
+/* Light theme overrides to ensure dark fonts on light backgrounds */
+.theme-light {
+  color: #1e293b !important;
+}
+
+.theme-light .text-white,
+.theme-light .text-slate-50,
+.theme-light .text-slate-100,
+.theme-light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+.theme-light .text-slate-300 {
+  color: #334155 !important;
+}
+
+.theme-light .text-slate-400 {
+  color: #475569 !important;
+}
+
+.theme-light .text-slate-500 {
+  color: #64748b !important;
+}
+
+.theme-light .text-pink-100,
+.theme-light .text-pink-200,
+.theme-light .text-pink-300,
+.theme-light .text-pink-400 {
+  color: #be185d !important; /* pink-700 */
+}
+
+.theme-light .text-blue-100,
+.theme-light .text-blue-200,
+.theme-light .text-blue-300,
+.theme-light .text-blue-400 {
+  color: #1d4ed8 !important; /* blue-700 */
+}
+
+.theme-light .text-yellow-100,
+.theme-light .text-yellow-200,
+.theme-light .text-yellow-300,
+.theme-light .text-yellow-400,
+.theme-light .text-amber-400 {
+  color: #b45309 !important; /* amber-700 */
+}
+
+.theme-light .text-indigo-100,
+.theme-light .text-indigo-200,
+.theme-light .text-indigo-300,
+.theme-light .text-indigo-400 {
+  color: #4338ca !important; /* indigo-700 */
+}
+
+.theme-light .text-emerald-300,
+.theme-light .text-emerald-400 {
+  color: #047857 !important; /* emerald-700 */
+}
+
+.theme-light .text-purple-300,
+.theme-light .text-purple-400 {
+  color: #7e22ce !important; /* purple-700 */
+}
+
+.theme-light .text-orange-300,
+.theme-light .text-orange-400 {
+  color: #c2410c !important; /* orange-700 */
+}
+
+/* Background panel overrides to make dark background elements translucent light elements in light themes */
+.theme-light .bg-slate-950,
+.theme-light .bg-slate-900,
+.theme-light .bg-slate-950\/30,
+.theme-light .bg-slate-950\/40,
+.theme-light .bg-slate-950\/50,
+.theme-light .bg-slate-950\/60,
+.theme-light .bg-slate-950\/80,
+.theme-light .bg-slate-950\/90,
+.theme-light .bg-slate-900\/30,
+.theme-light .bg-slate-900\/40,
+.theme-light .bg-slate-900\/50,
+.theme-light .bg-slate-900\/60,
+.theme-light .bg-slate-900\/80,
+.theme-light .bg-slate-900\/90,
+.theme-light .bg-slate-800,
+.theme-light .bg-slate-800\/30,
+.theme-light .bg-slate-800\/40,
+.theme-light .bg-slate-800\/50,
+.theme-light .bg-slate-800\/60,
+.theme-light .bg-slate-800\/80,
+.theme-light .bg-slate-800\/90,
+.theme-light .bg-white\/5,
+.theme-light .bg-white\/10,
+.theme-light .bg-white\/20 {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  color: #1e293b !important;
+  border-color: rgba(226, 232, 240, 0.8) !important;
+}
+
+/* Gradients override to soft cream / slate light gradients */
+.theme-light .from-slate-900,
+.theme-light .from-slate-950,
+.theme-light .from-slate-800 {
+  --tw-gradient-from: #f8fafc !important;
+}
+
+.theme-light .via-slate-950,
+.theme-light .via-slate-900 {
+  --tw-gradient-via: #f1f5f9 !important;
+}
+
+.theme-light .to-slate-900,
+.theme-light .to-slate-950,
+.theme-light .to-slate-800 {
+  --tw-gradient-to: #e2e8f0 !important;
+}
+
+/* Border overrides */
+.theme-light .border-slate-850,
+.theme-light .border-slate-800,
+.theme-light .border-slate-750,
+.theme-light .border-slate-700,
+.theme-light .border-slate-700\/50,
+.theme-light .border-white\/5,
+.theme-light .border-white\/10,
+.theme-light .border-white\/20,
+.theme-light .border-white\/30 {
+  border-color: rgba(226, 232, 240, 0.8) !important;
+}
+
+/* SVG icon / stroke color adaptations */
+.theme-light .stroke-slate-300,
+.theme-light .stroke-slate-400 {
+  stroke: #475569 !important;
+}
+
+/* Button overrides for non-active states */
+.theme-light .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+.theme-light .text-slate-400:hover {
+  color: #0f172a !important;
+}
+
